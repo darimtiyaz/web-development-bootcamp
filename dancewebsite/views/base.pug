@@ -1,0 +1,21 @@
+//- layout.
+doctype html
+html
+  head
+    title shola danace academy
+    block scripts
+    block style 
+  body
+    nav#navbar 
+        ul 
+            div#logo 
+                img(src="/static/img/logo.jfif", alt="HDA")
+                | HDA
+            li #[a(href="/") Home] 
+            li #[a(href="/") About] 
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact us] 
+    block content
+    footer#footer
+      | Copyright 2017 sholadanceAcademy.com 

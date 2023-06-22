@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Grid</title>
+  <style>
+    .container{
+      display: grid;
+      grid-gap:1rem;
+      border: 3px solid green;
+     
+    }
+
+    @media only screen and (max-width:300px){
+      body{
+        background-color: red;
+      }
+      .container{
+          grid-template-areas:
+          'navbar navbar navbar navbar'
+          'section section section section '
+          'aside aside aside aside'
+          'footer footer footer footer';
+        }
+      
+    }
+      @media only screen and (min-width: 300px) and (max-width:500px){
+        body{
+          background-color: blue;
+        }
+        .container{
+          grid-template-areas:
+          'navbar navbar navbar navbar'
+          'section section aside aside'
+          'footer footer footer footer';
+        }
+
+      }
+      @media (min-width: 500px) and (max-width:800px){
+        body{
+          background-color: blueviolet;
+        }
+        .container{
+          grid-template-areas:
+          'navbar navbar navbar navbar'
+          'section section aside aside'
+          'footer footer footer footer';
+        }
+        span{
+          display: block;
+          text-align: center;
+        }
+      }
+      @media (min-width:800px){
+      body{
+        background-color: green;
+      }
+      .container{
+          grid-template-areas:
+          'navbar navbar navbar navbar'
+          'section section section aside'
+          'footer footer footer footer';
+        }
+    }
+     
+    .item{
+      background-color: green;
+      border: 2px solid black;
+    }
+    #navbar{
+      grid-area: navbar;
+      background-color: yellow;
+      margin: 10px;
+      padding: 20px;
+    }
+    #section{
+      grid-area: section;
+      display: grid;
+      border: 3px solid green;
+      background-color: rgb(84, 84, 122);
+    }
+    #aside{
+      grid-area: aside;
+      background-color: rgb(117, 85, 85);
+    }
+    footer{
+      grid-area: footer;
+      background-color: rgb(35, 11, 57);
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div id="navbar" class="item">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact us</span>
+    </div>
+      
+      <div id="section" class="item">
+        <h1>Learn html and Css in hindi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum natus corporis ea consequuntur, tenetur officia aliquid eligendi sequi consectetur, voluptatem recusandae consequatur ipsa minima itaque sit, similique repudiandae amet quaerat temporibus! Cum, harum assumenda doloribus optio minus error rerum nisi exercitationem eligendi totam repudiandae quaerat autem veritatis voluptatum vel fugiat rem dolorum excepturi ab. Consequatur eaque tempore debitis magnam at nobis quisquam, fuga nostrum dicta veniam id alias obcaecati autem non eum voluptate modi et nesciunt voluptatibus ut quidem suscipit similique. Sapiente eveniet sit, sed quasi recusandae repudiandae odit mollitia quia esse. Sunt esse laboriosam soluta? Rem inventore voluptas reprehenderit consequuntur quas fugiat delectus quia debitis? Aperiam dolorum, praesentium sequi, laboriosam enim quod ex alias mollitia molestiae distinctio accusantium quaerat eum porro nihil, assumenda magnam animi tempora pariatur! Modi laudantium eum reprehenderit tempore similique nesciunt eaque, aspernatur dicta id? Deserunt, consequatur, blanditiis nihil architecto eius distinctio est doloribus illum dicta assumenda laboriosam. Cum deserunt nobis dolorem nostrum, velit unde ab illo repudiandae pariatur eum aspernatur minus aliquid porro consectetur nemo, animi modi rerum quis ratione labore magni ut sapiente? Ipsam officiis ipsa nesciunt cumque culpa totam incidunt maiores quaerat dicta perspiciatis! Quasi animi unde exercitationem nihil maxime praesentium magnam ipsam?</p>
+      </div>
+      <div id="aside" class="item">
+        <h1>More about us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minus. Sequi aliquam harum dolore tempore recusandae quibusdam eius, ea quae quidem nihil, nulla voluptatibus molestiae aliquid. Aut mollitia at nemo eius neque. Error cumque ut,</p>
+      </div>
+  </div>    
+      <footer class="item">@compyright with darimtiyaz. 2021</footer>
+
+</body>
+</html>

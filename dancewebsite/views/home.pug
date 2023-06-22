@@ -1,0 +1,56 @@
+//- page-a.pug
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  //- script(src='/pets.js')
+
+block style 
+    style 
+      include ../static/style.css 
+
+block content 
+    section#introSection 
+        div Welcome to shola's Dance Academy 
+        div.small  Eat sleep Dance request 
+
+    section#sponsorsSection 
+        h2 our sponsors
+        div#sponsors 
+            img(src="/static/img/logo1.png", alt="Sponsor Image", class="spiImage")
+            img(src="/static/img/logo2.jfif", alt="Sponsor Image", class="spiImage")
+            img(src="/static/img/logo3.png", alt="Sponsor Image", class="spiImage")
+            img(src="/static/img/logo4.png", alt="Sponsor Image", class="spiImage")
+
+    section#missionSection 
+        h2 our mission
+        div.card  
+            h3 Dance Perfection 
+                div.card-box 
+                    div.card-img
+                        img(src="/static/img/1.jfif")
+
+                    div.card-content 
+                        p This is the best dance academy    
+        div.card
+            h3 The dance way you like 
+                div.card-box 
+                    div.card-img
+                        img(src="/static/img/2.jfif")
+
+                    div.card-content 
+                        p This is the best dance academy    
+        div.card
+            h3 Excelent  teachings
+                div.card-box 
+                    div.card-img
+                        img(src="/static/img/3.jfif")
+
+                    div.card-content 
+                        p This is the best dance academy    
+
+    //- section#footer 
+    //-     | Copyright 2017 sholadanceAcademy.com 
+
+    //- script
+    //-   include ../static/index.js 

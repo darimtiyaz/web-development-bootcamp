@@ -1,0 +1,49 @@
+body{
+  background-color: cornflowerblue;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+}
+.item{
+  width: 1000px;
+  height: 400px;
+  background-color: gold;
+  border: 2px solid green;
+  margin: 10px;
+  padding: 3px;
+}
+h1{
+  text-align: center;
+}
+#item-1{
+background-image: url('images/1.jfif');
+}
+#item-2{
+  background-image: url('images/2.jfif');
+}
+#item-3{
+  background-image: url('images/3.jfif');
+}
+#item-4{
+  background-image: url('images/4.jfif');
+}
+#item-5{
+  background-image: url('images/5.jfif');
+}
+#item-6{
+  background-image: url('images/6.jfif');
+}
+.#mark{
+  font-family: 'Baloo Bhai' ,cursive;
+  background-color:blue;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+/* .card{
+  height: 30px;
+  width:100%;
+} */

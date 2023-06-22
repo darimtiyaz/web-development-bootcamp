@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid in css</title>
+  <style>
+    .grid{
+      /* display: flex; */
+    }
+    .container{
+      display: grid;
+      /* grid-template-columns: 300px 200px 100px; */
+      /* grid-template-columns: 300px auto 400px; */
+      /* grid-template-columns: 1fr 4fr 1fr; */
+      grid-template-columns: repeat(3,auto);
+      grid-gap: 3rem;
+    }
+    /* .box{
+      background-color: red;
+      border: 3px green;
+      border-radius: 2px;
+      margin: 10px;
+      padding: 10px;
+    } */
+    .item{
+      /* height: 100px;
+      width: 100px; */
+      background-color: red;
+      border: 2px solid black;
+      margin: 3px;
+      padding: 10px 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">This is box 1</div>
+    <div class="item">This is box 2</div>
+    <div class="item">This is box 3</div>
+    <div class="item">This is box 4</div>
+    <div class="item">This is box 5</div>
+    <div class="item">This is box 6</div>
+    <div class="item">This is box 7</div>
+    <div class="item">This is box 8</div>
+    <div class="item">This is box 9</div>
+  </div>
+</body>
+</html>
